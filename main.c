@@ -8,23 +8,25 @@ int main() {
 
     // Step 2
     arr[0] = 0;
+
+    // Step 3
     srand(time(NULL));
     for (i = 1; i < 10; i++)
         arr[i] = rand();
 
-    // Step 3
+    // Step 4
     printf("arr: ");
     for (i = 0; i < 10; i++)
         printf("%d ", arr[i]);
     printf("\n");
 
-    // Step 4
+    // Step 5
     int ray[10];
 
-    // Step 5
+    // Step 6
     int *ap = arr, *rp = ray;
 
-    // Step 6
+    // Step 7
     for (i = 0; i < 10; i++)
         rp[i] = ap[10-i-1];
     printf("ray: ");
@@ -38,4 +40,6 @@ int main() {
     for (i = 0; i < 10; i++)
         printf("%d ", *(rp+i));
     printf("\n");
+
+    return 0;
 }
